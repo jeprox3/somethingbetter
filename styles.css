@@ -1,0 +1,248 @@
+.nav {
+  width:100%;
+  margin: auto;
+  background-color:#85ad5d;
+  height: 55px;
+}
+
+.nav-container {
+  max-width:1000px;
+  margin: auto;
+  background-color: #85ad5d;
+  height: 55px;
+}
+
+.nav-container p{
+  font-size: 17px;
+  font-family: Arial;
+  color: white;
+}
+
+.call-us {
+  background-color:#0b82b5;
+  display: inline-block;
+  float:right;
+  height: 53px;
+  font-size: 20px;
+  font-family: Arial;
+  color: white;
+  border: 1px solid #ffffff;
+}
+
+.call-us p {
+  padding: 1px 40px;
+  font-size: 17px;
+  font-family: Arial;
+  color: white;
+}
+
+.banner {
+  max-width: 1500px;
+  margin:auto;
+  background-color: #222222;
+  height:230px;
+  padding-top: 100px;
+  background-image: url("images/banner.jpg");
+  background-size: cover;
+}
+
+.body-container {
+  max-width: 900px;
+  margin:auto;
+  padding: 40px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+
+}
+
+.logo {
+  display: inline-block;
+  border: 1px solid red;
+  width:350px;
+}
+
+.headline {
+  margin:auto;
+  background-color: #85ad5d;
+  display:block;
+  box-sizing: border-box;
+  width: 60%;
+  height: auto;
+  padding: 20px;
+  margin: auto;
+  line-height: 1.2;
+  font-size: 20px;
+  font-family: Arial;
+  margin-bottom: 50px;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: white;
+}
+
+.testimonial-picture {
+  display: inline-block;
+  width:192px;
+  height: 142px;
+  margin:auto;
+  background-image: url("images/testimonialfamily.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.testimonial-text {
+  display: inline-block;
+  width:500px;
+  height: auto;
+  vertical-align:bottom;
+  border: 4px solid #0b82b5;
+  border-left: 0px;
+  margin-left:-29px;
+  margin-bottom: 4px;
+  border-radius: 0 0 15px 0px;
+  font-family: 'Calligraffitti', cursive;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.blue-bar {
+  width: 100%;
+  margin:auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  background-color: #0b82b5;
+  background-image: url("images/blueback.jpg");
+  background-size: cover;
+}
+
+.organizing {
+  width: 90%;
+  max-width: 350px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  margin: 10px;
+  font-size: 15px;
+  font-family: Arial;
+  color: white;
+  padding: 20px;
+  font-family: 'Source Sans Pro', cursive;
+}
+
+.cleaning {
+  width: 90%;
+  max-width: 350px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+  margin: 10px;
+  font-size: 15px;
+  font-family: Arial;
+  color: white;
+  padding: 20px;
+  font-family: 'Source Sans Pro', cursive;
+}
+
+.cleaning p {
+}
+
+.bottom-container {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 40px;
+  text-align: center;
+  background-image: url("images/bottomback.jpg");
+  background-size: cover;
+}
+
+.bottom-blerg {
+  max-width: 940px;
+  font-weight: lighter;
+  color: #000000;
+  font-size: 28px;
+  font-family: 'Markazi Text';
+  margin: auto;
+  text-align: left;
+  padding-bottom: 40px;
+}
+
+.lower-buttons {
+  max-width: 700px;
+  display: block;
+  text-align: center;
+  margin: auto;
+}
+
+.blue-button {
+    background: linear-gradient(180deg, #057DB4, 10%, #FFF, 11%, #fff, 14%, #057DB4, 15%, #057DB4);
+    width: 200px;
+    height: auto;
+    color: white;
+    display:inline-block;
+    padding: 10px;
+    text-decoration: none;
+    transition: .5s;
+    background-color: #057DB4;
+    padding: 20px 20px;
+    margin: 15px;
+
+    &:hover {
+      background: linear-gradient(180deg, #00A, 10%, #FFF, 11%, #FFF, 12%, #00A, 13%, #00A);
+    }
+  }
+
+.green-button {
+    background: linear-gradient(180deg, #85ad5d, 10%, #FFF, 11%, #fff, 14%, #85ad5d, 15%, #85ad5d);
+    width: 200px;
+    height: auto;
+    color: white;
+    display:inline-block;
+    padding: 10px;
+    text-decoration: none;
+    transition: .5s;
+    background-color: #057DB4;
+    padding: 20px 20px;
+    margin: 15px;
+
+    &:hover {
+      background: linear-gradient(180deg, #057DB4, 10%, #FFF, 11%, #fff, 14%, #057DB4, 15%, #057DB4);
+    }
+  }
+
+
+
+.team {
+  display: block;
+
+  margin: auto;
+  margin-top:50px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #7ea254;
+  height: 300px;
+  margin-top:-40px;
+}
+
+.social-container {
+  margin: auto;
+  padding-top: 30px;
+  width: 300px;
+  display: block;
+  text-align: center;
+}
+
+.social-button {
+   border: 1px solid #ffffff;
+   margin: 5px;
+}
+
+.footer p{
+  color: #ffffff;
+  text-align: center;
+  font-family: Arial;
+  font-size: 18px;
+}
