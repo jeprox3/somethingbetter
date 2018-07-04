@@ -53,7 +53,6 @@
   box-sizing: border-box;
   display: block;
   text-align: center;
-  border: 1px solid red;
 
 }
 
@@ -65,7 +64,7 @@
 
 .headline {
   margin:auto;
-  background-color: #85ad5d;
+  background-color: red;
   display:block;
   box-sizing: border-box;
   width: 100%;
