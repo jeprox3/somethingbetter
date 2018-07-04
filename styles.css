@@ -53,6 +53,7 @@
   box-sizing: border-box;
   display: block;
   text-align: center;
+  border: 1px solid red;
 
 }
 
