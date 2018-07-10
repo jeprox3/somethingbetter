@@ -156,6 +156,7 @@
   text-align: center;
   background-image: url("images/bottomback.jpg");
   background-size: cover;
+  opacity: 0.8;
 }
 
 .bottom-blerg {
