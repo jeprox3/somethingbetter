@@ -69,7 +69,7 @@
   width: 100%;
   max-width: 800px;
   height: auto;
-  padding: 60px 0;
+  padding: 100px 0;
   line-height: 1.2;
   font-size: 45px;
   margin-bottom: 0px;
@@ -99,7 +99,7 @@
   margin-bottom: 4px;
   border-radius: 0 0 35px 0px;
   font-family: 'Calligraffitti', cursive;
-  padding: 10px;
+  padding: 0px;
   box-sizing: border-box;
   font-size: 18px;
 }
@@ -107,7 +107,6 @@
 .blue-bar {
   width: 100%;
   margin:auto;
-  margin-top: 80px;
   padding: 20px;
   box-sizing: border-box;
   display: block;
@@ -122,7 +121,7 @@
   max-width: 350px;
   border: 2px solid #ffffff;
   display: inline-block;
-  margin: 10px;
+  margin: 25px;
   font-size: 15px;
   font-family: Arial;
   color: white;
@@ -158,35 +157,36 @@
 }
 
 .bottom-blerb {
-  max-width: 940px;
+  max-width: 920px;
   font-weight: 100;
   color: #000000;
   font-size: 24px;
   font-family: 'Markazi Text';
   margin: auto;
   text-align: left;
-  padding-bottom: 40px;
+  padding: 20px 0;
 }
 
 .lower-buttons {
-  max-width: 700px;
+  max-width: 800px;
   display: block;
   text-align: center;
-  margin: auto;
+  margin: 40px auto; 
 }
 
 .blue-button {
-    background: linear-gradient(180deg, #057DB4, 10%, #FFF, 11%, #fff, 14%, #057DB4, 15%, #057DB4);
-    width: 200px;
+    /*background: linear-gradient(180deg, #057DB4, 10%, #e5e5e5, 11%, #e5e5e5, 12%, #057DB4, 13%, #057DB4);*/
+    width: 280px;
     height: auto;
+    font-family: 'Nanum Gothic', sans-serif;
     color: white;
+    font-size: 25px;
     display:inline-block;
-    padding: 10px;
     text-decoration: none;
     transition: .5s;
     background-color: #057DB4;
-    padding: 20px 20px;
-    margin: 15px;
+    padding: 40px 20px;
+    margin: 2px 0;
 
     &:hover {
       background: linear-gradient(180deg, #00A, 10%, #FFF, 11%, #FFF, 12%, #00A, 13%, #00A);
@@ -194,17 +194,18 @@
   }
 
 .green-button {
-    background: linear-gradient(180deg, #85ad5d, 10%, #FFF, 11%, #fff, 14%, #85ad5d, 15%, #85ad5d);
-    width: 200px;
+    /*background: linear-gradient(180deg, #85ad5d, 10%, #FFF, 11%, #fff, 12%, #85ad5d, 13%, #85ad5d);*/
+    width: 280px;
     height: auto;
+    font-family: 'Nanum Gothic', sans-serif;
     color: white;
+    font-size: 25px;
     display:inline-block;
-    padding: 10px;
     text-decoration: none;
     transition: .5s;
-    background-color: #057DB4;
-    padding: 20px 20px;
-    margin: 15px;
+    background-color: #85ad5d;
+    padding: 40px 20px;
+    margin: 2px 0;
 
     &:hover {
       background: linear-gradient(180deg, #057DB4, 10%, #FFF, 11%, #fff, 14%, #057DB4, 15%, #057DB4);
@@ -223,7 +224,7 @@
 .footer {
   width: 100%;
   background-color: #7ea254;
-  height: 300px;
+  height: 260px;
   margin-top:-40px;
 }
 
