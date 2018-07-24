@@ -61,7 +61,7 @@
 .logo {
   display: inline-block;
   border: 1px solid red;
-  width:350px;
+  max-width:350px;
 }
 
 .headline {
@@ -83,7 +83,7 @@
 
 .testimonial-picture {
   display: inline-block;
-  width:192px;
+  max-width:192px;
   height: 142px;
   margin:auto;
   background-image: url("images/testimonialfamily.png");
@@ -93,7 +93,7 @@
 
 .testimonial-text {
   display: inline-block;
-  width:500px;
+  max-width:500px;
   height: auto;
   vertical-align:bottom;
   border: 4px solid #0b82b5;
@@ -179,7 +179,7 @@
 
 .blue-button {
     /*background: linear-gradient(180deg, #057DB4, 10%, #e5e5e5, 11%, #e5e5e5, 12%, #057DB4, 13%, #057DB4);*/
-    width: 280px;
+    max-width: 280px;
     height: auto;
     font-family: 'Nanum Gothic', sans-serif;
     color: white;
@@ -198,7 +198,7 @@
 
 .green-button {
     /*background: linear-gradient(180deg, #85ad5d, 10%, #FFF, 11%, #fff, 12%, #85ad5d, 13%, #85ad5d);*/
-    width: 280px;
+    max-width: 280px;
     height: auto;
     font-family: 'Nanum Gothic', sans-serif;
     color: white;
@@ -234,7 +234,7 @@
 .social-container {
   margin: auto;
   padding-top: 30px;
-  width: 300px;
+  max-width: 300px;
   display: block;
   text-align: center;
 }
