@@ -18,7 +18,6 @@ body {
   margin: auto;
   background-color: #85ad5d;
   height: 55px;
-  border-bottom: 1px solid white;
 }
 
 .nav-container p {
@@ -40,7 +39,8 @@ body {
   font-size: 20px;
   font-family: Arial;
   color: white;
-  border: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
 }
 
 .call-us p {
@@ -51,7 +51,7 @@ body {
 }
 
 .banner {
-  max-width: 1500px;
+  max-width: 2000px;
   margin:auto;
   background-color: #222222;
   height:230px;
@@ -125,7 +125,7 @@ body {
   box-sizing: border-box;
   display: inline-block;
   text-align: center;
-  background-color: #0b82b5;
+  background-color: #0A436E;
   background-image: url("images/blueback.jpg");
   background-size: cover;
 }
@@ -244,7 +244,8 @@ body {
     margin-bottom: 0px;
     font-family: 'Nanum Gothic', sans-serif;
     color: #6f9648;
-    font-weight: 500;     
+    font-weight: 500; 
+    padding-top: 30px;    
 }
 
 .content-subheadline {
@@ -280,8 +281,22 @@ body {
 }
 
 .social-button {
-   border: 1px solid #ffffff;
-   margin: 5px;
+  border: 1px solid #ffffff;
+  margin: 5px;
+}
+
+
+
+.internal-nav-box {
+  display: inline-block;
+  width: 150px;
+  padding: 20px 0;
+  background-color: #0a436e;
+  color: #ffffff;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: white;
+  font-size: 14px;
+  border-bottom: 3px solid #ffffff;
 }
 
 .footer p{
