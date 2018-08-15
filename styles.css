@@ -31,6 +31,22 @@ body {
   color: #ffffff;
 }
 
+.nav-box {
+  width: 23%;
+  display: inline-block;
+  margin: auto;
+  padding: 15px 0;
+  background-color: #086891;
+  color: #ffffff;
+  font-family: 'Nanum Gothic', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  transition: 0.2s;   
+  margin: 0 0px;
+}
+
+
 .call-us {
   background-color:#0b82b5;
   display: inline-block;
@@ -319,7 +335,6 @@ body {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
   transition: 0.2s; 
-  
 }
 
 .internal-nav-box:hover {
