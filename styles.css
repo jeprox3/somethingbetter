@@ -50,7 +50,7 @@ body {
 
 
 .call-us {
-  background-color:#0b82b5;
+  background-color:#086891;
   display: inline-block;
   float:right;
   height: 54px;
@@ -62,7 +62,7 @@ body {
 }
 
 .call-us p {
-  padding: 1px 30px;
+  padding: 1px 25px;
   font-size: 17px;
   font-family: Arial;
   color: white;
