@@ -28,6 +28,8 @@ body {
   color: white;
 }
 
+
+
 .nav-container a {
   text-decoration: none;
   color: #ffffff;
@@ -59,6 +61,13 @@ body {
   color: white;
   border-left: 1px solid #ffffff;
   border-right: 1px solid #ffffff;
+  transition: 0.3s;  
+}
+
+.call-us:hover {
+  border-left: 1px solid #7EA254;
+  border-right: 1px solid #7EA254;
+  color: #7EA254;  
 }
 
 .call-us p {
@@ -66,13 +75,29 @@ body {
   font-size: 17px;
   font-family: Arial;
   color: white;
+  transition: 0.3s;    
+}
+
+.call-us p:hover {
+  text-shadow: 0 0 20px #ffffff;
+}
+
+
+.special-offers {
+  font-size: 30px;
+  font-family: 'Dancing Script', cursive; 
+  color: white; 
+  padding-bottom: 15px; 
+  padding-top:65px; 
+  text-align: center; 
+  background-color: #534D49;
 }
 
 .banner {
   max-width: 2000px;
   margin:auto;
   background-color: #222222;
-  height:230px;
+  height:200px;
   padding-top: 100px;
   background-image: url("images/banner.jpg");
   background-size: cover;
@@ -90,7 +115,8 @@ body {
 
 .logo {
   display: inline-block;
-  width:350px;
+  width: 500px;
+  margin-top: -100px;
 }
 
 .headline {
@@ -164,12 +190,14 @@ body {
   color: white;
   padding: 15px;
   font-family: 'Source Sans Pro', cursive;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .organizing:hover {
   border: 2px solid #7EA254;
 }
+
+
 
 .cleaning {
   width: 90%;
@@ -182,7 +210,7 @@ body {
   color: white;
   padding: 15px;
   font-family: 'Source Sans Pro', cursive;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 
 .cleaning:hover {
@@ -201,6 +229,10 @@ body {
   text-align: center;
   background-image: url("images/bottomback.jpg");
   background-size: cover;
+}
+
+.bottom-container a {
+  text-decoration:none;
 }
 
 .bottom-blurb {
@@ -234,11 +266,14 @@ body {
     background-color: #057DB4;
     padding: 40px 20px;
     margin: 2px 0;
+    border: 1px solid #057DB4;  
+}
 
-    &:hover {
-      background: linear-gradient(180deg, #00A, 10%, #FFF, 11%, #FFF, 12%, #00A, 13%, #00A);
-    }
-  }
+   .blue-button:hover {
+    border: 1px solid #85ad5d;    
+      text-shadow: 0 0 40px #ffffff;
+
+}
 
 .green-button {
     /*background: linear-gradient(180deg, #85ad5d, 10%, #FFF, 11%, #fff, 12%, #85ad5d, 13%, #85ad5d);*/
@@ -253,11 +288,13 @@ body {
     background-color: #85ad5d;
     padding: 40px 20px;
     margin: 2px 0;
+    border: 1px solid #85ad5d;  
 
-    &:hover {
-      background: linear-gradient(180deg, #057DB4, 10%, #FFF, 11%, #fff, 14%, #057DB4, 15%, #057DB4);
-    }
-  }
+}
+   .green-button:hover {
+    border: 1px solid #057DB4;    
+    text-shadow: 0 0 40px #ffffff;
+}
 
 .content {
     width: 100%;
@@ -354,6 +391,11 @@ body {
   font-family: Arial;
   font-size: 18px;
   line-height: 140%;
+}
+
+.footer p a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /* Media Queries */
