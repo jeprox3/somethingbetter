@@ -441,7 +441,7 @@ body {
   }  
 
   .cleaning span, .organizing span {
-    font-size: vw!important;
+    font-size: 1vw!important;
   }
 
   .feel-relief {
