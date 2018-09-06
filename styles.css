@@ -306,8 +306,8 @@ body {
 }
 
 .content {
+    max-width: 800px!important;
     width: 95%;
-    max-width: 800px;
     margin: auto;
     text-align: left;
     font-family: 'Nanum Gothic', sans-serif;
@@ -458,6 +458,10 @@ body {
 
   .social-container img{
     width:40px;
+  }
+
+  .content {
+    width: 80%;
   }
 
   .content img {
