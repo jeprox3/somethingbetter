@@ -28,8 +28,6 @@ body {
   color: white;
 }
 
-
-
 .nav-container a {
   text-decoration: none;
   color: #ffffff;
@@ -71,11 +69,11 @@ body {
 }
 
 .call-us p {
-  padding: 1px 15px;
+  padding: 0px 15px;
   font-size: 17px;
   font-family: Arial;
   color: white;
-  transition: 0.3s;    
+  transition: 0.3s; 
 }
 
 .call-us p:hover {
@@ -355,7 +353,7 @@ body {
 .social-container {
   margin: auto;
   padding-top: 30px;
-  width: 300px;
+  width: 220px;
   display: block;
   text-align: center;
 }
@@ -401,7 +399,7 @@ body {
   color: #ffffff;
   text-align: center;
   font-family: Arial;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 140%;
 }
 
@@ -441,7 +439,7 @@ body {
   }  
 
   .cleaning span, .organizing span {
-    font-size: 10vw!important;
+    font-size: 40px!important;
   }
 
   .feel-relief {
@@ -451,6 +449,20 @@ body {
 
   .team {
     max-width: 200px;
+  }
+
+  .content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .social-container img{
+    width:40px;
+  }
+
+  .content img {
+    float: none!important;
+    margin: auto!important;
   }
 
 }
