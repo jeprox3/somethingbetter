@@ -306,7 +306,7 @@ body {
 }
 
 .content {
-    width: 100%;
+    width: 95%;
     max-width: 800px;
     margin: auto;
     text-align: left;
@@ -353,7 +353,7 @@ body {
 .social-container {
   margin: auto;
   padding-top: 30px;
-  width: 220px;
+  width: 250px;
   display: block;
   text-align: center;
 }
