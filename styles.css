@@ -462,11 +462,13 @@ body {
 
   .content {
     width: 80%;
+
   }
 
   .content img {
     float: none!important;
-    margin: auto!important;
+    margin: 20px auto!important;
+    width: 90%!important;
   }
 
 }
