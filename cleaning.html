@@ -8,17 +8,52 @@
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
 </head>
-<nav>
-<nav>
+<nav role="navigation">
+
   <div class="nav">
     <div class="nav-container">
+      
+
       <div class="top-left-regular" style="color: white; height: 55px; display: inline-block;">
         <p style="padding:1px 15px;"><a href="index.html"> Home &nbsp;</a> |  &nbsp; <a href="cleaning.html">Cleaning</a> &nbsp; | <a href="organizing.html"> &nbsp; Organizing</a></p>
       </div>
 
-      <div  class="top-left-mobile" style="color: white; height: 55px; display: none;">
-        <p style="padding:1px 15px;"><a href="index.html"> H &nbsp;</a> |  &nbsp; <a href="cleaning.html">C</a> &nbsp; | <a href="organizing.html"> &nbsp; O</a></p>
-      </div>
+      <div id="menuToggle" >
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="index.html"><li>Home</li></a>
+      <a href="contact.html"><li>Conact Us</li></a>
+      <a href="special-offers.html"><li>Special Offers</li></a>
+      <a href="cleaning.html"><li>Cleaning</li></a>
+      <a href="organizing.html"><li>Organizing</li></a>
+      <a href="about-us.html"><li>About Us</li></a>
+      <a href="why-were-better.html"><li>Why We're Better</li></a>
+      <a href="were-hiring.html"><li>We're Hiring!</li></a>
+      <a href="gift-certificates.html"><li>Gift Certificates</li></a>
+      <a href="faqs.html"><li>FAQs</li></a>
+      <a href="tips-and-techniques.html"><li>Tips and Techniques</li></a>
+      
+    </ul>
+  </div>
 
 
       <div class="top-right-regular" style="display: inline-block; float: right;">  
@@ -46,7 +81,6 @@
     <a href="special-offers.html" style="text-decoration:none;"><div class="special-offers">Click here to see special offers!</div></a>
   </div>
 </nav>
-
 
 
   <div class="bottom-container">
