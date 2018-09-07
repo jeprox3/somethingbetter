@@ -48,6 +48,9 @@ body {
   margin: 0 0px;
 }
 
+#menuToggle {
+  display: none;
+}
 
 .call-us {
   background-color:#086891;
@@ -319,12 +322,14 @@ body {
 
 .content-headline {
     text-align: center;
-    font-size: 45px;
+    font-size: 42px;
     margin-bottom: 0px;
     font-family: 'Nanum Gothic', sans-serif;
     color: #6f9648;
     font-weight: 500; 
-    padding-top: 50px;    
+    padding-top: 50px;  
+    line-height: 1.1em;
+    
 }
 
 .content-subheadline {
@@ -333,9 +338,10 @@ body {
     margin-bottom: 0px;
     font-family: 'Nanum Gothic', sans-serif;
     color: #154c72;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 10px; 
     font-weight: 500; 
+    line-height: 1.4em;    
 }
 
 .team {
@@ -343,24 +349,6 @@ body {
   width: auto;
   margin: auto;
   margin-top:50px;
-}
-
-.footer {
-  width: 100%;
-  background-color: #7ea254;
-}
-
-.social-container {
-  margin: auto;
-  padding-top: 30px;
-  width: 300px;
-  display: block;
-  text-align: center;
-}
-
-.social-button {
-  border: 1px solid #ffffff;
-  margin: 5px;
 }
 
 .internal-nav-outer {
@@ -394,6 +382,10 @@ body {
 .internal-nav-box:hover {
   background-color: #7EA254;
 }
+.footer {
+  width: 100%;
+  background-color: #7ea254;
+}
 
 .footer p{
   color: #ffffff;
@@ -408,52 +400,219 @@ body {
   color: #ffffff;
 }
 
+.social-container {
+  margin: auto;
+  padding-top: 30px;
+  width: 300px;
+  display: block;
+  text-align: center;
+}
+
+.social-button {
+  border: 1px solid #ffffff;
+  margin: 5px;
+}
+
+
+
 /* Media Queries */
 @media only screen and (max-width: 550px) {
- .logo {
+  #menuToggle {
+  display: block;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+  .logo {
     width: 80% !important;
- }
+  }
 
- .top-left-regular {
+  .top-left-regular {
     display: none!important;
- }
+  }
 
- .top-left-mobile {
+  .top-left-mobile {
     display: inline-block!important;
- }
+  }
 
- .top-right-regular {
+  .top-right-regular {
     display: none!important;
- }
+  }
 
- .top-right-mobile {
+  .top-right-mobile {
     display: inline-block!important;
- }
+  }
 
- .special-offers {
+  .special-offers {
     font-size: 20px;
- }
+  }
 
- .headline {
-    font-size: 20px;
+  .headline {
+    font-size: 30px;
+    padding: 40px 20px;
   }  
+
+  .testimonial-picture {
+    width:60%;
+    height: 100%
+    position: relative;
+    top: 93px;
+    left: 0px;
+    z-index: 3000;
+  }
+
+  .testimonial-text {
+    margin: auto;
+    max-width: 640px;
+    font-family: 'Kalam', cursive;
+    line-height: 140%;
+    font-size: 22px;
+    color: #ffffff;  
+    background-color: #85AD5D;
+    padding: 30px;
+    padding-top: 190px;
+    box-sizing: border-box;
+    border-radius: 0px;
+    margin-top: -80px;
+  }
+
 
   .cleaning span, .organizing span {
     font-size: 40px!important;
   }
 
-  .feel-relief {
-    font-size: 24px;
-    padding: 0px;
+  #mobile-hide{
+    display: none!important;
+  }
+    .feel-relief {
+    font-size: 34px;
+    padding: 10px;
   }
 
   .team {
-    max-width: 200px;
-  }
-
-  .content {
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 90%;
   }
 
   .social-container img{
@@ -461,14 +620,22 @@ body {
   }
 
   .content {
-    width: 80%;
-
+    width: 85%;
   }
 
   .content img {
     float: none!important;
     margin: 20px auto!important;
     width: 90%!important;
+    text-align: center;
+  }
+
+  .internal-nav-outer {
+    display: none;
   }
 
 }
+
+
+
+

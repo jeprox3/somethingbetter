@@ -8,16 +8,45 @@
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 
 </head>
-<nav>
+<nav role="navigation">
+
   <div class="nav">
     <div class="nav-container">
+      
+
       <div class="top-left-regular" style="color: white; height: 55px; display: inline-block;">
         <p style="padding:1px 15px;"><a href="index.html"> Home &nbsp;</a> |  &nbsp; <a href="cleaning.html">Cleaning</a> &nbsp; | <a href="organizing.html"> &nbsp; Organizing</a></p>
       </div>
 
-      <div  class="top-left-mobile" style="color: white; height: 55px; display: none;">
-        <p style="padding:1px 15px;"><a href="index.html"> H &nbsp;</a> |  &nbsp; <a href="cleaning.html">C</a> &nbsp; | <a href="organizing.html"> &nbsp; O</a></p>
-      </div>
+      <div id="menuToggle" >
+    <!--
+    A fake / hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+    <input type="checkbox" />
+    
+    <!--
+    Some spans to act as a hamburger.
+    
+    They are acting like a real hamburger,
+    not that McDonalds stuff.
+    -->
+    <span></span>
+    <span></span>
+    <span></span>
+    
+    <!--
+    Too bad the menu has to be inside of the button
+    but hey, it's pure CSS magic.
+    -->
+    <ul id="menu">
+      <a href="#"><li>Home</li></a>
+      <a href="#"><li>About</li></a>
+      <a href="#"><li>Info</li></a>
+      <a href="#"><li>Contact</li></a>
+      <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+    </ul>
+  </div>
 
 
       <div class="top-right-regular" style="display: inline-block; float: right;">  
@@ -70,8 +99,14 @@
     <div class="lower-buttons">
       <a href="about-us.html"><div class="blue-button">About Us</div></a>
       <a href="why-were-better.html"><div class="green-button">Why We're Better</div></a>
-      <a href="were-hiring.html"><div class="green-button">We're Hiring!</div></a>
-      <a href="gift-certificates.html"><div class="blue-button">Gift Certificates</div></a>
+      <a href="were-hiring.html"><div class="green-button" id="mobile-hide">We're Hiring!</div></a>
+      <a href="gift-certificates.html"><div class="blue-button" id="mobile-hide">Gift Certificates</div></a>
+
+
+      <a href="were-hiring.html"><div class="blue-button" style="display: none;" id="mobile-show">We're Hiring!</div></a>
+      <a href="gift-certificates.html"><div class="green-button" style="display: none;"id="mobile-show">Gift Certificates</div></a>
+
+
       <a href="faq.html"><div class="blue-button">FAQs</div></a>
       <a href="tips-and-techniques.html"><div class="green-button">Tips and Techniques</div></a>
     </div>
