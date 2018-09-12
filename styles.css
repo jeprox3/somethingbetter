@@ -97,7 +97,6 @@ body {
   max-width: 2000px;
   margin:auto;
   background-color: #222222;
-  
   background-image: url("images/banner.jpg");
   background-size: cover;
   padding-top: 100px;
@@ -203,8 +202,7 @@ body {
 }
 
 .testimonial-picture {
-  width:192px;
-  height: 142px;
+  width:180px;
   position: relative;
   top: 93px;
   left: -210px;
@@ -245,7 +243,7 @@ body {
 
 .lower-buttons {
   width: 100%;
-  max-width: 800px;
+  max-width: 520px;
   display: block;
   text-align: center;
   margin: 40px auto; 
@@ -254,7 +252,7 @@ body {
 .blue-button {
     /*background: linear-gradient(180deg, #057DB4, 10%, #e5e5e5, 11%, #e5e5e5, 12%, #057DB4, 13%, #057DB4);*/
     width: 80%;
-    max-width: 280px;
+    max-width: 250px;
     height: auto;
     font-family: 'Nanum Gothic', sans-serif;
     color: white;
@@ -263,7 +261,7 @@ body {
     text-decoration: none;
     transition: .5s;
     background-color: #057DB4;
-    padding: 40px 20px;
+    padding: 40px 0px;
     margin: 2px 0;
     border: 1px solid #057DB4;  
 }
@@ -277,7 +275,7 @@ body {
 .green-button {
     /*background: linear-gradient(180deg, #85ad5d, 10%, #FFF, 11%, #fff, 12%, #85ad5d, 13%, #85ad5d);*/
     width: 80%;
-    max-width: 280px;
+    max-width: 250px;
     height: auto;
     font-family: 'Nanum Gothic', sans-serif;
     color: white;
@@ -286,7 +284,7 @@ body {
     text-decoration: none;
     transition: .5s;
     background-color: #85ad5d;
-    padding: 40px 20px;
+    padding: 40px 0px;
     margin: 2px 0;
     border: 1px solid #85ad5d;  
 
@@ -416,7 +414,7 @@ body {
 
 
 /* Media Queries */
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 580px) {
 
   #menuToggle {
   display: block;
@@ -543,8 +541,7 @@ body {
   }  
 
   .testimonial-picture {
-    width:60%;
-    height: 100%
+
     position: relative;
     top: 93px;
     left: 0px;
@@ -574,7 +571,16 @@ body {
   #mobile-hide{
     display: none!important;
   }
-    .feel-relief {
+   
+  #mobile-show{
+    display: inline-block!important;
+  }
+
+  .lower-buttons {
+    max-width: 300px;
+  }
+  
+  .feel-relief {
     font-size: 34px;
     padding: 10px;
   }
